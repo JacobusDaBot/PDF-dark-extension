@@ -1,0 +1,22 @@
+{
+   "action": {
+      
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "description": "I cast dark mode",
+   "host_permissions": [ "<all_urls>" ],
+   
+   "manifest_version": 3,
+   "minimum_chrome_version": "88",
+   "name": "PDF Dark Mode",
+   "permissions": [ "scripting", "declarativeContent" ],
+   "content_scripts":[{
+      "matches":["<all_urls>"],
+      "js":["background.js"]
+      
+   }],
+   "version": "3.0"
+}
